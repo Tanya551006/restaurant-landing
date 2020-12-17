@@ -1,0 +1,9 @@
+// settings
+@import 'libs/_normalize';
+@import "settings/_fonts";
+@import "settings/_mixins";
+@import "settings/_common";
+
+// components
+@import '../components/header/header';
+@import '../components/footer/footer';
