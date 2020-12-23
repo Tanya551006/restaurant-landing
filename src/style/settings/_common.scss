@@ -17,34 +17,27 @@ body {
 p {
 	margin: 0;
 }
+a {
+	 color: #fff;
+}
+
+a:hover {
+	color: #00c5d2;
+}
+
+h1 {
+	
+}
 
 h2 {
-	position: relative;
-	&::after {
-		content: '';
-		bottom: -20px;
-		left: 50%;
-		transform: translateX(-50%);
-		position: absolute;
-		width: 103px;
-		background: #68a4ff;
-		height: 5px;
-
-		
-		@media (max-width: 768px) {
-			bottom: -15px;	
-		}
-		@media (max-width: 639px) {
-			bottom: -10px;	
-		}
-		@media (max-width: 480px) {
-			bottom: -5px;	
-		}
-	}
 }
 
 h3 {
-	margin: 35px 0 30px;
+	font-family: 'Sacramento', sans-serif;
+	font-size: 36px;
+	color: #00c5d2;
+	font-weight: 400;
+	margin: 35px 0 5px;
 
 	@media (max-width: 1023px) {
 		margin: 30px 0 25px;
@@ -92,26 +85,27 @@ h3 {
 
 .btn {
 	color: #fff;
-	font-family: 'Bebas Neue', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
-	font-size: 24px;
-	padding: 19px 0;
-	line-height: 0.77em;
+	font-size: 16px;
+	padding: 17px 0;
+	line-height: 0.93em;
 	letter-spacing: 0.02em;
 	text-align: center;
-	background-color: #68a4ff;
-	border-radius: 27.5px;
+	background-color: #ff3a2d;
+	border-radius: 6px;
 	display: block;
 	cursor: pointer;
-	width: 177px;
+	width: 200px;
 	transition: .3s ease;
-	border: 2px solid #68a4ff;
+	border: 2px solid #ff3a2d;
+	font-weight: 600;
 
 	
 
 	&:hover {
-		color: #68a4ff;
-		background: #fff;
+		color: #fff;
+		background: transparent;
 	}
 
 	&_white {
@@ -138,31 +132,30 @@ h3 {
 }
 
 .title {
-	font-family: 'Bebas Neue', sans-serif;
+	font-family: 'Lobster Two', cursive;
 	font-weight: 700;
-	font-size: 55px;
-	color: #212944;
+	font-size: 36px;
+	color: #222222;
 	margin: 0;
-	text-transform: uppercase;
-	line-height: 1.127em;
+	line-height: 1.5em;
 	text-align: center;
-	margin-bottom: 65px;
+	margin-bottom: 20px;
 
 	@media (max-width: 1023px) {
-		font-size: 51px;
+		font-size: 34px;
 		margin-bottom: 55px;
 	}
 
 	@media (max-width: 768px) {
-		font-size: 47px;
+		font-size: 32px;
 		margin-bottom: 45px;
 	}
 	@media (max-width: 639px) {
-		font-size: 42px;
+		font-size: 30px;
 		margin-bottom: 35px;
 	}
 	@media (max-width: 480px) {
-		font-size: 35px;
+		font-size: 28px;
 		margin-bottom: 25px;
 	}
 }
