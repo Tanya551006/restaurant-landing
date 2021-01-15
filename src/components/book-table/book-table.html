@@ -18,7 +18,19 @@
                 </p>
             </div>
             <div class="book-table__form form">
-
+                <div class="form__title title">
+                    Book Table
+                </div>
+                <form action="#" class="form__wrap">
+                    <input type="text" class="form__input" placeholder="Your Name*" name="name" required>
+					<input type="number" class="form__input" placeholder="Total People" name="people" min="1" max="50" required>
+					<input type="date" class="form__input" placeholder="Date :" name="date" required>
+                    <input type="time" class="form__input" placeholder="Time :" name="time"required>
+                    <input type="number" class="form__input" placeholder="Table No :" name="table" min="1" max="25" required>
+					<button type="submit" class="form__btn btn">
+						Book Now.
+					</button>
+                </form>
             </div>
         </div>
     </div>
