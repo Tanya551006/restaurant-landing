@@ -1,6 +1,5 @@
 .book-table {
   padding-top: 135px;
-  background-image: url(../../img/book-table/leaf.png);
 
   &__wrap {
     display: flex;
@@ -21,11 +20,12 @@
 
     &:after {
       content: '';
-      background-image: url(../img/global/line-red-1.png);
+      background: url(../img/book-table/red-line.png)no-repeat center center / contain;
       position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
+      display: block;
+      width: 210px;
+      height: 25px;
+      bottom: 0;
       left: 0;
     }
   }
@@ -62,11 +62,13 @@
 
     &::before {
       content: '';
-      background-image: url(../../img/book-table/shape.png);
+      background: url(../img/book-table/snow-icon.png)no-repeat center center / contain;
       position: absolute;
       top: 0;
       left: 0;
-
+      width: 25px;
+      height: 25px;
+      display: block;
     }
   }
 

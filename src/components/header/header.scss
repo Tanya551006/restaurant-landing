@@ -119,6 +119,13 @@
 
 .nav {
    background: #fff;
+   transition: padding .3s ease;
+
+   &.active {
+      .nav__img {
+         bottom: -10px;
+      }
+   }
 
    &__menu {
       display: flex;
@@ -131,6 +138,7 @@
       position: absolute;
       bottom: 20px;
       left: 0;
+      transition: .3s ease;
    }
 
    &__wrap {
