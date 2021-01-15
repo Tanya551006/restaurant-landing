@@ -1,2 +1,47 @@
-.header {
+.book-table {
+
+  &__wrap {
+
+  }
+
+  &__box {
+    width: 670px;
+  }
+
+  &__title {
+    font-style: italic;
+    text-align: left;
+    font-size: 28px;
+    margin-top: 70px;
+
+    &:after {
+      content: '';
+      background: url(../img/global/line-red-1.png);
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__title span {
+    color: #ff3a2d;
+    font-size: 48px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__signature {
+    font-family: 'Sacramento', cursive;
+    font-size: 16px;
+    color: #000;
+  }
+
+  &__signature span {
+    font-size: 28px;
+  }
+}
+
+.form {
+
 }

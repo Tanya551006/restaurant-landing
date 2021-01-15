@@ -1,9 +1,13 @@
 .header {
-   background: url(../../img/header/header-back.jpg);
-   padding: 25px 0 10px;
+   background: url(../img/header/header-back.jpg);
+   padding: 330px 0 235px;
+   position: relative;
 
    &__wrap {
-
+      line-height: 1.07em;
+      position: absolute;
+      top: 25px;
+      width: 100%;
    }
 
    &__box {
@@ -14,7 +18,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-left: 135px;
+      margin-left: 130px;
    }
 
    &__wellcome {
@@ -60,7 +64,7 @@
    }
     
    &__login {
-      margin-right: 35px;
+      margin-right: 40px;
    }
 
    &__login span {
@@ -69,7 +73,6 @@
 
    &__content {
       text-align: center;
-      margin: 210px 0 50px;
    }
 
    &__home {
@@ -87,7 +90,7 @@
    &__text {
       color: #fff;
       width: 800px;
-      margin: 0 auto 55px;
+      margin: 0 auto 60px;
       font-weight: 500;
       font-size: 16px;
       line-height: 1.75em;
@@ -104,13 +107,30 @@
       width: 150px;
    }
 }
+.active {
+   position: fixed;
+   background: #000;
+   width: 100%;
+   top: 0;
+   padding: 10px 0;
+   z-index: 1;
+   border-bottom: 3px solid #ff3a2d;
+}
 
 .nav {
    background: #fff;
 
    &__menu {
       display: flex;
-      justify-content: start;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+   }
+
+   &__img {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
    }
 
    &__wrap {
@@ -119,7 +139,7 @@
    }
 
    &__item {
-      
+      padding: 10px 12px;
    }
 
    &__link {
@@ -127,27 +147,59 @@
       font-weight: 700;
       color: #222222;
       text-transform: uppercase;
+      line-height: 1.07em;
+   }
+
+   &__link:hover {
+      text-decoration: underline;
+      color: #222222;
+      transition: .3s ease;
    }
 
    &__basket {
+      font-size: 20px;
+      color: #222222;
+      margin: 0 35px 0 15px;
+      position: relative;
 
+      span {
+         background: #ff3a2d;
+         top: -5px;
+         right: -5px;
+         font-size: 8px;
+         font-family: 'Raleway', sans-serif;
+         border-radius: 50%;
+         color: #fff;
+         position: absolute;
+         width: 10px;
+         height: 10px;
+         text-align: center;
+         margin: 0 auto;
+         line-height: 1em;
+
+
+      }
    }
+   
+   // &__basket:after {
+   //    content: "";
+   //    position: absolute;
+   // }
+
 
    &__btn {
       color: #fff;
       font-family: 'SourceSansPro', sans-serif;
       text-transform: uppercase;
       font-size: 14px;
-      padding: 19px 0;
-      line-height: 0.77em;
-      letter-spacing: 0;
-      text-align: center;
-      background-color: #ff3a2d;
+      padding: 5px 0;
       border-radius: 0 6px 0 6px;
-      display: block;
-      cursor: pointer;
-      width: 150px;
-      transition: .3s ease;
-      border: 2px solid #ff3a2d;
+      width: 120px;
+      font-weight: 700;
+      line-height: 1.07em;
+   }
+
+   &__btn:hover {
+      color: #ff3a2d;
    }
 }
