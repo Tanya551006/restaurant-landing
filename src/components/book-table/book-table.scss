@@ -17,6 +17,8 @@
     font-size: 28px;
     margin-top: 15px;
     position: relative;
+    line-height: 1.4em;
+    font-weight: 700;
 
     &:after {
       content: '';
@@ -25,9 +27,13 @@
       display: block;
       width: 210px;
       height: 25px;
-      bottom: 0;
+      bottom: -35px;
       left: 0;
     }
+  }
+
+  &__content {
+    margin-top: 70px;
   }
 
   &__title span {
@@ -36,13 +42,18 @@
   }
 
   &__text {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+  }
+  &__text:last-child {
+    margin-bottom: 75px;
   }
 
   &__signature {
     font-family: 'Sacramento', cursive;
     font-size: 16px;
     color: #000;
+    text-align: center;
+    width: 200px;
   }
 
   &__signature span {
@@ -64,8 +75,18 @@
       content: '';
       background: url(../img/book-table/snow-icon.png)no-repeat center center / contain;
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 10px;
+      left: 100px;
+      width: 25px;
+      height: 25px;
+      display: block;
+    }
+    &::after {
+      content: '';
+      background: url(../img/book-table/snow-icon.png)no-repeat center center / contain;
+      position: absolute;
+      top: 10px;
+      right: 100px;
       width: 25px;
       height: 25px;
       display: block;
