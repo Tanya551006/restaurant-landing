@@ -1,0 +1,1 @@
+$('.feedback__slider').slick()

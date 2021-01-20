@@ -1,5 +1,6 @@
 .book-table {
   margin-top: 55px;
+  background: url(../../img/book-table/leaf.png)no-repeat left calc(50% + 540px) bottom;
 
   &__wrap {
     display: flex;
@@ -37,7 +38,6 @@
   }
 
   &__title span {
-    color: #ff3a2d;
     font-size: 48px;
   }
 
@@ -55,10 +55,10 @@
     color: #000;
     text-align: center;
     width: 200px;
-  }
 
-  &__signature span {
-    font-size: 28px;
+    & span {
+      font-size: 28px;
+    }
   }
 }
 
@@ -218,10 +218,6 @@
 }
 
 @media (max-width: 479px) {
-  .book-table {
-
-  }
-
   .form {
     &__input {
       width: 90%;

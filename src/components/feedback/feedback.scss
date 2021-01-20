@@ -1,2 +1,63 @@
-.header {
+.feedback{
+  background: #ffe8e7;
+  &__subtitle {
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  &__title {
+    position: relative;
+    &::after {
+      content: '';
+      background: url(../img/global/blue-line.png)no-repeat center center / contain;
+      position: absolute;
+      display: block;
+      width: 270px;
+      height: 30px;
+      bottom: -25px;
+      left: calc(50% - 135px);
+      }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 115px;
+  }
+
+  &__img {
+    max-width: 370px;
+  }
+
+  &__box {
+    background: #fff;
+    width: 770px;
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  &__quote {
+    font-size: 72px;
+  }
+
+  &__text {
+    width: 610px;
+    margin: 35px auto 40px;
+  }
+
+  &__rating {
+    font-size: 16px;
+    color: #000;
+  }
+
+  &__signature {
+    font-family: 'Sacramento', cursive;
+    font-size: 16px;
+    color: #000;
+    margin-top: 45px;
+
+    & span {
+      font-size: 28px;
+    }
+  }
 }
