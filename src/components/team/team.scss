@@ -1,2 +1,56 @@
-.header {
+.team {
+  font-family: 'Lobster Two', cursive;
+  text-align: center;
+  &__subtitle {
+    text-align: center;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 100px;
+    &::after {
+      content: '';
+      background: url(../img/global/blue-line.png)no-repeat center center / contain;
+      position: absolute;
+      display: block;
+      width: 270px;
+      height: 30px;
+      bottom: -25px;
+      left: calc(50% - 135px);
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 370px;
+  }
+
+  &__img {
+    margin-bottom: 25px;
+  }
+
+  &__name {
+    text-transform: capitalize;
+    color: #00c5d2;
+    font-size: 24px;
+  }
+
+  &__position {
+    text-transform: capitalize;
+    color: #808080;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  &__contact {
+    font-size: 16px;
+  }
+
+  &__link {
+    color: #808080;
+  }
 }

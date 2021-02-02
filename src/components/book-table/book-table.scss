@@ -1,25 +1,27 @@
 .book-table {
-  margin-top: 55px;
+  padding: 135px 0 75px;
   background: url(../../img/book-table/leaf.png)no-repeat left calc(50% + 540px) bottom;
 
   &__wrap {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 
   }
 
   &__box {
     width: 670px;
+    padding: 15px 0;
   }
 
   &__title {
     font-style: italic;
     text-align: left;
     font-size: 28px;
-    margin-top: 15px;
     position: relative;
     line-height: 1.4em;
     font-weight: 700;
+    margin-bottom: 70px;
 
     &:after {
       content: '';
@@ -34,7 +36,6 @@
   }
 
   &__content {
-    margin-top: 70px;
   }
 
   &__title span {
@@ -122,7 +123,7 @@
 
 @media (max-width: 1200px) {
   .book-table {
-    margin-top: 40px;
+    padding: 115px 0 65px;
 
     &__title span {
       font-size: 46px;
@@ -135,8 +136,11 @@
 
 @media (max-width: 1023px) {
   .book-table {
-    margin-top: 20px;
+    padding: 95px 0 50px;
 
+    &__title {
+      margin-bottom: 50px;
+    }
     &__title span {
       font-size: 44px;
     }
@@ -151,9 +155,9 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .book-table {
-    margin-top: 0;
+    padding: 55px 0 40px;
     
     &__wrap {
       flex-direction: column;
@@ -189,11 +193,10 @@
    
 }
 
-@media (max-width: 639px) {
+@media (max-width: 640px) {
   .book-table {
-    &__content {
-      margin-top: 50px;
-    }
+    padding: 40px 0 30px;
+
     &__text {
       margin-bottom: 10px;
       &:last-child {
@@ -217,7 +220,10 @@
   }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 480px) {
+  .book-table {
+    padding: 30px 0 25px;
+  }
   .form {
     &__input {
       width: 90%;
