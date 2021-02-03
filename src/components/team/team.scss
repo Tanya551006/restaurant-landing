@@ -20,7 +20,7 @@
     }
   }
 
-  &__wrap {
+  &__slider {
     display: flex;
     justify-content: space-between;
   }
@@ -66,10 +66,6 @@
 
   &__ellipse:first-child {
     margin-right: 20px;
-  }
-
-  &__link-photo {
-    
   }
 
   &__img:hover &__overley {
