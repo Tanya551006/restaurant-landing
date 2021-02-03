@@ -39,8 +39,11 @@
 
   &__overley {
     position: absolute;
-    background: #38bae6;
-    background: linear-gradient(90deg, #38bae6 0%, #21d7ea 50%, #08f5ef 100%);
+    background: 
+    linear-gradient(90deg,
+    rgba(56, 186,230, .7) 0%, 
+    rgba(33, 215, 234, .7) 50%,
+    rgba(8, 245, 239, .7) 100%);
     top: 0;
     left: 0;
     width: 100%;
@@ -69,7 +72,7 @@
   }
 
   &__img:hover &__overley {
-    opacity: 0.7;
+    opacity: 1;
   }
 
   &__name {
