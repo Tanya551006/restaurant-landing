@@ -1,5 +1,4 @@
 .header {
-   background: url(../img/header/header-back.jpg);
    padding: 365px 0 235px;
    position: relative;
 
@@ -104,6 +103,45 @@
 
    &__btn {
       width: 150px;
+   }
+
+   &__bg-slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      z-index: -1;
+
+      .slick-track {
+         height: 100%;
+      }
+
+      .slick-dots {
+         bottom: 30px;
+
+         li {
+
+            &.slick-active {
+               button {
+                  height: 40px;
+                  background: #f00;
+               }
+            }
+            button {
+               width: 20px;
+               height: 20px;
+               background: #fff;
+               transition: .3s ease;
+            }
+         }
+      }
+
+      img {
+         max-width: fit-content;
+         object-fit: cover;
+      }
    }
 }
 .active {

@@ -5,3 +5,11 @@ $(window).scroll(function () {
       $('.nav').removeClass('active');
   }
 });
+
+$('.header__bg-slider').slick({
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  speed: 2000,
+  dots: true,
+})
